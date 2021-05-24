@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GoogleSearchRunner" project="FiservCodingAssesment" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="com.runners.GoogleSearchRunner" time="12.163" incomplete="true">
+    <error>java.lang.RuntimeException: java.net.ConnectException: Connection timed out: connect&#13;
+	at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:36)&#13;
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)&#13;
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:102)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:74)&#13;
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:236)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.net.ConnectException: Connection timed out: connect&#13;
+	at java.base/sun.nio.ch.Net.connect0(Native Method)&#13;
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)&#13;
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)&#13;
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)&#13;
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)&#13;
+	at java.base/java.net.Socket.connect(Socket.java:648)&#13;
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:290)&#13;
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)&#13;
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)&#13;
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)&#13;
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)&#13;
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:265)&#13;
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)&#13;
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)&#13;
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1194)&#13;
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1082)&#13;
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)&#13;
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1375)&#13;
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1350)&#13;
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:220)&#13;
+	at io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:90)&#13;
+	at io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:86)&#13;
+	at io.cucumber.core.plugin.UrlOutputStream.close(UrlOutputStream.java:63)&#13;
+	at java.base/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:353)&#13;
+	at java.base/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:168)&#13;
+	at java.base/java.io.OutputStreamWriter.close(OutputStreamWriter.java:255)&#13;
+	at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:33)&#13;
+	... 13 more&#13;
+&#13;
+</error>
+    <testsuite name="Perform Google search" time="12.163">
+      <testcase name="Google search validation" classname="Perform Google search" time="4.615"/>
+      <testcase name="Google Search with Examples #1" classname="Perform Google search" time="3.81">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.Z0LcW.XcVN5d a"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UM0S4VN', ip: '10.0.0.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\WHITES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fb1bf39f1aa029555469682b248bab8
+*** Element info: {Using=css selector, value=div.Z0LcW.XcVN5d a}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)&#13;
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at com.Pages.GoogleSearchResultsPage.getSearchResultsText(GoogleSearchResultsPage.java:18)&#13;
+	at com.StepDefinitions.GoogleSearchSteps.i_must_see_on_the_results_page(GoogleSearchSteps.java:46)&#13;
+	at ✽.I must see "New Delhi" on the results page(file:///C:/Users/WhiteShadow/FiservCodingAssesment/FiservCodingAssesment/src/test/resources/com/features/GoogleSearch.feature:18)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Google Search with Examples #2" classname="Perform Google search" time="3.737">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.Z0LcW.XcVN5d a"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UM0S4VN', ip: '10.0.0.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\WHITES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a95f76e176d1ceec5b174931e79a8d1
+*** Element info: {Using=css selector, value=div.Z0LcW.XcVN5d a}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)&#13;
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at com.Pages.GoogleSearchResultsPage.getSearchResultsText(GoogleSearchResultsPage.java:18)&#13;
+	at com.StepDefinitions.GoogleSearchSteps.i_must_see_on_the_results_page(GoogleSearchSteps.java:46)&#13;
+	at ✽.I must see "Dhaka" on the results page(file:///C:/Users/WhiteShadow/FiservCodingAssesment/FiservCodingAssesment/src/test/resources/com/features/GoogleSearch.feature:18)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

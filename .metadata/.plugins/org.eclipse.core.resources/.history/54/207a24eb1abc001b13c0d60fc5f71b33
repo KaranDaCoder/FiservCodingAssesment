@@ -1,0 +1,42 @@
+package com.StepDefinitions;
+
+import com.Pages.GoogleHomePage;
+import com.managers.DriverManager;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+public class GoogleSearchSteps {
+	
+	private GoogleHomePage googleHomePage = new GoogleHomePage(DriverManager.getDriverInstance());
+	
+	@Given("I am on the Google Home page")
+	public void i_am_on_the_google_home_page() {
+	}
+
+	@Given("I see the title as {string}")
+	public void i_see_the_title_as(String string) {
+
+	}
+
+	@Then("I type {string} in search text")
+	public void i_type_in_search_text(String string) {
+
+	}
+
+	@Then("click on search button")
+	public void click_on_search_button() {
+
+	}
+
+	@Then("I must be navigated to results page")
+	public void i_must_be_navigated_to_results_page() {
+
+	}
+
+	@Then("I must see {string} on the results page")
+	public void i_must_see_on_the_results_page(String string) {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+}

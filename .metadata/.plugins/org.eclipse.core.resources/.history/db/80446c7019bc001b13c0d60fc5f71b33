@@ -1,0 +1,29 @@
+package AppHooks;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+import com.managers.DriverManager;
+import com.utils.PropertiesReader;
+
+import io.cucumber.java.Before;
+
+public class Hooks {
+
+private DriverManager driverManager;
+private WebDriver driver;
+private PropertiesReader propertiesReader;
+private Properties prop;
+
+
+@Before(order=0)
+public void getProperty() {
+	propertiesReader = new PropertiesReader();
+	prop = propertiesReader.init();
+	
+}
+
+	
+	
+}

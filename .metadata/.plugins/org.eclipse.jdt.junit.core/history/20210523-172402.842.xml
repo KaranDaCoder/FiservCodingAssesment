@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GoogleSearchRunner" project="FiservCodingAssesment" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.runners.GoogleSearchRunner" time="7.804">
+    <testsuite name="Country Capitals" time="7.803">
+      <testcase name="Google Search with Examples #1" classname="Country Capitals" time="4.187"/>
+      <testcase name="Google Search with Examples #2" classname="Country Capitals" time="3.616"/>
+    </testsuite>
+  </testsuite>
+</testrun>

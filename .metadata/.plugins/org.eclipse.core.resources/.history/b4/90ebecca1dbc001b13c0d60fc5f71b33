@@ -1,0 +1,17 @@
+package com.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class GoogleSearchResultsPage {
+
+	private WebDriver driver;
+	
+	private By searchResults = By.cssSelector("div.Z0LcW.XcVN5d a");
+	
+	public GoogleSearchResultsPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	
+}

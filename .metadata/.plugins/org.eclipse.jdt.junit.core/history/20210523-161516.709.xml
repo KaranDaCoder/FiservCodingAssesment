@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GoogleSearchRunner" project="FiservCodingAssesment" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.runners.GoogleSearchRunner" time="4.863">
+    <testsuite name="Perform Google search" time="4.863">
+      <testcase name="Google search validation" classname="Perform Google search" time="4.863"/>
+    </testsuite>
+  </testsuite>
+</testrun>
